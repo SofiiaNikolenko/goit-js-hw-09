@@ -1,5 +1,6 @@
 :root {
     --neutral-color: #FFFFFF;
+    --cloud-color: #F4F4FD;
     --iris-color: #4D5AE5;
     --ocean-color: #404BBF;
 }
@@ -31,8 +32,17 @@ button:hover,
 button:focus {
     background-color: var(--neutral-color);
     color: var(--iris-color);
-    border: 1px solid var(--ocean-color);
+    border-color: var(--ocean-color);
 
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: none;
+    color: var(--cloud-color);
+    border-color: var(--cloud-color);
+
+    opacity: 0.5;
     transform: scale(1.05);
 }
 
